@@ -1,0 +1,36 @@
+# Python / envs
+__pycache__/
+*.pyc
+*.pyo
+.idea/
+.vscode/
+.claude/
+
+# Model weights / data (re-downloaded or user-provided)
+CLIP/ckpt/
+ckpt/
+checkpoints/
+data/
+wandb/
+tmp/
+
+# Datasets: ship code only, not the CSV folders
+dataset/*
+!dataset/*.py
+# image-anomaly path is commented out -> its loader is unused
+dataset/medical_few.py
+# local helper (contains machine-specific paths), not published
+dataset/actionclip_txt_to_madclip_csv.py
+
+# Paper assets / analysis / scratch (kept locally, not published)
+analysis/
+images/*
+!images/diagram.png
+*.pdf
+args.txt
+key.json
+measure_latency.py
+visualize_preds.py
+run_clip1.sh
+run_clip2.sh
+experiments.sh
